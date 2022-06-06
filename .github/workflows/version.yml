@@ -8,6 +8,4 @@ on:
 
 jobs:
   versiontag:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: nice-jan-p/github-actions/js/simple@v1
+    uses: nice-jan-p/github-actions/js/simple/version.yml@v1
