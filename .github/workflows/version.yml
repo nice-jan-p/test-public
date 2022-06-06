@@ -1,5 +1,11 @@
 name: version
 
+on: 
+  push:
+    branches:
+      - main
+      - master
+
 jobs:
   versiontag:
     steps:
