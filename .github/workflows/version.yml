@@ -1,0 +1,6 @@
+name: version
+
+jobs:
+  versiontag:
+    steps:
+      - uses: nice-jan-p/github-actions/js/simple@v1
