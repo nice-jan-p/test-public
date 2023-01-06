@@ -1,10 +1,11 @@
 name: version
 
-on: 
+on:
   push:
     branches:
-      - main
-      - master
+      - version
+  #     - main
+  #     - master
 
 jobs:
   versiontag:
