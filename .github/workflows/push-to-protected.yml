@@ -11,10 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
-        uses: actions/checkout@v2
-        with:
-          token: ${{ secrets.KEY }}
+        uses: actions/checkout@v3
       - name: push
+        env:
+          GITHUB_TOKEN: ${{ secrets.KEY }}
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
