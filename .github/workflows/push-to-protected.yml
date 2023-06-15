@@ -17,3 +17,5 @@ jobs:
           git add .
           git commit -m "push to protected"
           git push origin
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
