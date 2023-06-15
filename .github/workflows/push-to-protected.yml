@@ -21,6 +21,6 @@ jobs:
           date > date.txt
           git add .
           git commit -m "push to protected"
-          git push origin
+          git push origin main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
